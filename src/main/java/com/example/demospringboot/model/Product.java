@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idProduct", nullable = false)
+    @Column(name = "id_product", nullable = false)
     private Integer id;
 
     @Column(name = "designation", nullable = false, length = 25)
@@ -27,7 +27,7 @@ public class Product {
     private String photo;
 
     @ManyToOne
-    @JoinColumn(name = "idCat")
+    @JoinColumn(name = "id_cat")
     private Category idCat;
 
     public Category getIdCat() {

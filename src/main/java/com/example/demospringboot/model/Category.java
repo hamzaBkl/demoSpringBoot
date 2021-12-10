@@ -11,7 +11,7 @@ public class Category {
     private Integer id;
 
     @Column(name = "name_cat", length = 25)
-    private String nameCat;
+    private String name;
 
     @Lob
     @Column(name = "description")
@@ -25,12 +25,12 @@ public class Category {
         this.description = description;
     }
 
-    public String getNameCat() {
-        return nameCat;
+    public String getName() {
+        return name;
     }
 
-    public void setNameCat(String nameCat) {
-        this.nameCat = nameCat;
+    public void setName(String nameCat) {
+        this.name = nameCat;
     }
 
     public Integer getId() {
